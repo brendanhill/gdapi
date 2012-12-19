@@ -1193,6 +1193,7 @@ Additional "RPC" type operations can be denoted in the URI or link either by the
 
   -/files/:id?download
   -/files/:id/download
+  
 ----------------------------------------
 # Nesting #
 Resources and collections MAY be nested.  For example, folders might be associated to files, and files to a collection of tags:
