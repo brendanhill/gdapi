@@ -1191,9 +1191,9 @@ Content-Type: application/json
 ### Action Operation Query Component ###
 Additional "RPC" type operations can be denoted in the URI or link either by the "?" query identifier, or as a full route. The following for example illustrate "download" as the action that will be applied:
 
-  -/files/:id?download
-  -/files/:id/download
-  
+  - /files/:id?download
+  - /files/:id/download
+
 ----------------------------------------
 # Nesting #
 Resources and collections MAY be nested.  For example, folders might be associated to files, and files to a collection of tags:
