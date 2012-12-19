@@ -1271,6 +1271,9 @@ Versions resources  MAY also have a "revision" string attribute that changes on 
 
 Outdated versions SHOULD be deprecated and eventually removed from the service.  A request for a version that has been removed SHOULD return a 410 error.
 
+### URI based Versioning or Header based ###
+The style of versioning that a particular API uses is up to the team creating the API.  Header versioning leverages existing HTTP standards.  URL versioning is slightly easier to test and debug.  Both styles of API versioning are discussed constantly, but currently either style is supported.
+
 ### Listing ###
 Clients MUST be able to make a GET request to the base URL (without a version fragment) to find out what versions are available.  This request SHOULD NOT require authentication.  Clients SHOULD check the "latest" link periodically and take action if they are no longer using the latest version.
 
